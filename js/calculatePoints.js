@@ -1,6 +1,6 @@
 import { myModal } from "../components/modal.js";
 
-let points = 1;
+let points = 0;
 let result = [];
 let alert = document.getElementById('alert');
 let save = document.getElementById('save');
@@ -33,6 +33,12 @@ calculate.addEventListener('click', () => {
             result.push(Array.from(panel)[i].dataset.result);
         }
     }
+
+    if (temp == 1) {
+        points = 0;
+        result = [];
+    }
+
     if (temp == 0) {
         let username = document.getElementById('user-name');
         
@@ -57,4 +63,6 @@ calculate.addEventListener('click', () => {
             });
 
     }
+    console.log(points);
+    console.log(result);
 })
