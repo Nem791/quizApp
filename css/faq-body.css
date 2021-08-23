@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.faq-wrap {
+    margin-bottom: 30px;
+    position: relative;
+}
+  
+.panel {
+    padding: 0 18px;
+    background-color: #e0c199;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-check {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+  
+.faq {
+    padding-top: 70px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.container-faq {
+    width: 400px;
+    height: 100%;
+    margin: auto;
+}
+  
+.faq-title {
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+}
+  
+.faq-body {
+    position: relative;
+    align-items: center;
+}
+  
+.faq-title-wrap {
+    height: 100%;
+    align-items: center;
+}
+  
+
+h1, h3 {
+    text-align: center;
+}
+
+#arrow-title:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+  
+.points {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.cal-btn {
+    display: flex;
+    justify-content: center;
+    height: 6vh;
+    margin-top: 10px;
+}
+
+/* Ripple effect */
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+  }
+  .ripple:hover {
+    background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+  }
+  .ripple:active {
+    background-color: #6eb9f7;
+    background-size: 100%;
+    transition: background 0s;
+  }
+  
+  /* Button style */
+  button {
+    border: none;
+    border-radius: 2px;
+    padding: 12px 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    background-color: #2196f3;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+  }
+
+.carousel-control-prev, .carousel-control-next {
+    box-shadow: none;
+}
+
+#alert {
+    margin: auto;
+}
+
+@media screen and (max-height: 400px) {
+    #alert {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+  }
+
+@media screen and (max-height: 600px) {
+    .cal-btn {
+        height: fit-content;
+    }
+    
+    footer {
+        margin-top: 70px;
+    }
+  }

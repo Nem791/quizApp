@@ -1,0 +1,14 @@
+footer {
+    padding-top: 30px;
+    margin-top: 20px;
+}
+
+.footer-p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-p > p {
+    width: 80%;
+}

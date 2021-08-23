@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="faq-wrap">
+        <button class="accordion" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop">${data[n][i].quizNumber}</button>
+        <div class="col-xl-4 panel" role="group" aria-label="Basic radio toggle button group">
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="${data[n][i].quizNumber}">
+                <label class="form-check-label">${data[n][i].answers[0]}</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="${data[n][i].quizNumber}">
+                <label class="form-check-label">${data[n][i].answers[1]}</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="${data[n][i].quizNumber}">
+                <label class="form-check-label">${data[n][i].answers[2]}</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="${data[n][i].quizNumber}">
+                <label class="form-check-label">${data[n][i].answers[3]}</label>
+            </div>
+        </div>
+
+        <p hidden>${data[n][i].quiz}<br>${data[n][i].a}<br>${data[n][i].b}<br>${data[n][i].c}<br>${data[n][i].d}</p>
+
+    </div>
+</body>
+
+</html>

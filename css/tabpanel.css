@@ -1,0 +1,16 @@
+.side-bar {
+    height: 100%;
+    margin-bottom: 600px;
+    width: 200px;
+}
+
+.list-group {
+    border-radius: 0px;
+}
+
+.list-group-item {
+    height: inherit;
+    width: 100%;
+    cursor: pointer;
+    background-color: rgb(235, 217, 217);
+}
